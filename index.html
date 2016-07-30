@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+        Tic Tac Toe
+    </title>
+  </head>
+
+  <body>
+      <span>
+        <button id = "0" onclick = "toggle(this.id)">
+          -
+        </button>
+        <button id = "1" onclick = "toggle(this.id)">
+          -
+        </button>
+        <button id = "2" onclick = "toggle(this.id)">
+          -
+        </button>
+      </span>
+      <br/>
+      <span>
+        <button id = "3" onclick = "toggle(this.id)">
+          -
+        </button>
+        <button id = "4" onclick = "toggle(this.id)">
+          -
+        </button>
+        <button id = "5" onclick = "toggle(this.id)">
+          -
+        </button>
+      </span>
+      <br/>
+      <span>
+        <button id = "6" onclick = "toggle(this.id)">
+          -
+        </button>
+        <button id = "7" onclick = "toggle(this.id)">
+          -
+        </button>
+        <button id = "8" onclick = "toggle(this.id)">
+          -
+        </button>
+      </span>
+
+      <script>
+      function toggle(id) {
+        console.log(id);
+        console.log(document.getElementById(id).innerHTML);
+
+        if (document.getElementById(id).innerHTML.trim() == "-") {
+          document.getElementById(id).innerHTML = "x";
+        }
+        else if (document.getElementById(id).innerHTML == "x") {
+          document.getElementById(id).innerHTML = "o";
+        }
+        else {
+          document.getElementById(id).innerHTML = "-";
+        }
+        console.log(document.getElementById(id).innerHTML);
+
+      }
+
+      </script>
+  </body>
+</html>
